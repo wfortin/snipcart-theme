@@ -1,0 +1,51 @@
+#snipcart-main-content {
+    .snipcart-columns {
+        margin: 20px 0;
+
+        /* Boxed columns */
+        &.snipcart-boxed-columns {
+            margin: 0;
+
+            .snipcart-column span.snipcart-title {
+                padding-top: 20px;
+                /* We add some padding because the box is right next to the top */
+            }
+
+            .snipcart-action {
+                display: block;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .snipcart-column-2 {
+                border-top: 1px solid @border-color;
+            }
+
+            .snipcart-column {
+                padding-bottom: 20px;
+            }
+        }
+        /* / Boxed columns */
+    }
+
+    .snipcart-column {
+        padding: 0 20px;
+
+        &.highligthed {
+            background: linear-gradient(to right, rgba(246, 246, 246, 1) 1%, rgba(251, 251, 251, 1) 5%);
+        }
+
+        span.snipcart-title {
+            text-transform: uppercase;
+            display: block;
+            font: 16px @headings-font-bold;
+            color: #333333;
+        }
+    }
+
+    .snipcart-paymentsby-paypal {
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+}

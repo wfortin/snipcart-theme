@@ -1,0 +1,127 @@
+/*** Tipsy jquery plugin ***/
+
+.snipcart-tipsy {
+    font-size: 10px;
+    position: absolute;
+    padding: 5px;
+    z-index: 100000;
+}
+
+.snipcart-tipsy-inner {
+    background-color: #C00;
+    color: #FFF;
+    max-width: 200px;
+    padding: 5px 8px 4px 8px;
+    text-align: center;
+}
+
+/* Rounded corners */
+.snipcart-tipsy-inner {
+    border-radius: 3px;
+}
+
+/* Uncomment for shadow */
+/*.tipsy-inner { box-shadow: 0 0 5px #000000; -webkit-box-shadow: 0 0 5px #000000; -moz-box-shadow: 0 0 5px #000000; }*/
+
+.snipcart-tipsy-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 5px dashed #000;
+}
+
+/* Rules to colour arrows */
+.snipcart-tipsy-arrow-n {
+    border-bottom-color: #C00;
+}
+
+.snipcart-tipsy-arrow-s {
+    border-top-color: #C00;
+}
+
+.snipcart-tipsy-arrow-e {
+    border-left-color: #C00;
+}
+
+.snipcart-tipsy-arrow-w {
+    border-right-color: #C00;
+}
+
+.snipcart-tipsy-n .snipcart-tipsy-arrow {
+    top: 0px;
+    left: 50%;
+    margin-left: -5px;
+    border-bottom-style: solid;
+    border-top: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.snipcart-tipsy-nw .snipcart-tipsy-arrow {
+    top: 0;
+    left: 10px;
+    border-bottom-style: solid;
+    border-top: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.snipcart-tipsy-ne .snipcart-tipsy-arrow {
+    top: 0;
+    right: 10px;
+    border-bottom-style: solid;
+    border-top: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.snipcart-tipsy-s .snipcart-tipsy-arrow {
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-top-style: solid;
+    border-bottom: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.snipcart-tipsy-sw .snipcart-tipsy-arrow {
+    bottom: 0;
+    left: 10px;
+    border-top-style: solid;
+    border-bottom: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.snipcart-tipsy-se .snipcart-tipsy-arrow {
+    bottom: 0;
+    right: 10px;
+    border-top-style: solid;
+    border-bottom: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.snipcart-tipsy-e .snipcart-tipsy-arrow {
+    right: 0;
+    top: 50%;
+    margin-top: -5px;
+    border-left-style: solid;
+    border-right: none;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.snipcart-tipsy-w .snipcart-tipsy-arrow {
+    left: 0;
+    top: 50%;
+    margin-top: -5px;
+    border-right-style: solid;
+    border-left: none;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+/*** / Tipsy jquery plugin ***/

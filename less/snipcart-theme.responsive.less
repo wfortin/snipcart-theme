@@ -1,0 +1,344 @@
+@media only screen and (min-width: 480px) {
+    #snipcart-header {
+        text-align: center;
+    }
+
+    #snipcart-main-container a.snipcart-btn,
+    #snipcart-main-container button.snipcart-btn {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #snipcart-main-container #snipcart-cartitems-continue-top {
+        display: block
+    }
+
+    #snipcart-close {
+        top: 10px;
+        right: 10px;
+    }
+
+    #snipcart-main-container table#snipcart-items td.snipcart-td-6 a.snipcart-duplicate-item {
+        margin-top: 0;
+        right: 0;
+    }
+
+    /*** General Styles ***/
+    #snipcart-main-container #snipcart-header {
+        height: 105px;
+        padding: 0;
+    }
+
+    #snipcart-header #snipcart-title {
+        display: block;
+        min-width: 300px;
+    }
+
+    #snipcart-main-container a.snipcart-btn,
+    #snipcart-main-container button.snipcart-btn {
+        padding: 0 25px; /* Larger buttons */
+    }
+
+    #snipcart-main-container button.snipcart-btn {
+        border: none;
+    }
+
+    #snipcart-main-container td, #snipcart-main-container th {
+        display: table-cell; /* We have enough space so we list elems as cells */
+    }
+
+    #snipcart-main-container table.snipcart-list .snipcart-no-customfields {
+        border-top: 1px solid @border-color;
+        /* We want to see the border when the elem is show as cell */
+    }
+
+    /*** / General Styles ***/
+    /*** Header ***/
+    #snipcart-header #snipcart-header-total {
+        margin-top: 35px; /* We want the total to be slightly higher to align with the larger title */
+        margin-left: 20px;
+    }
+
+    #snipcart-header #snipcart-title {
+        text-align: left;
+        font: 30px/105px brandon_grotesquelight, sans-serif;
+        padding-left: 25px;
+        width: auto;
+        top: 0;
+
+        min-width: 300px;
+        position: absolute;
+    }
+
+    #snipcart-header #snipcart-total span.snipcart-label {
+        display: inline;
+    }
+
+    #snipcart-cartitems-checkout-top {
+        top: 35px; /* We want the checkout button to be slightly higher to align with the larger title */
+    }
+
+    /*** / Header ***/
+    /*** Steps ***/
+    ul#snipcart-steps {
+        height: 90px;
+    }
+
+    ul#snipcart-steps li span.snipcart-step-text {
+        box-sizing: border-box;
+        display: block;
+        text-align: center;
+        margin: 13px 0 0 0;
+        padding: 0 2px;
+        width: 100%;
+        text-transform: uppercase;
+        color: #8e8e8e;
+        font-weight: bold;
+        line-height: 16px;
+        font: 10px/16px 'brandon_grotesquebold', Arial, sans-serif;
+    }
+
+    ul#snipcart-steps li span.snipcart-step-number {
+        margin: 9px 0 0 0;
+        font: 28pt 'Snipcart';
+    }
+
+    /*** / Steps ***/
+    /*** Columns ***/
+    /* We split the columns (33% each) */
+    #snipcart-main-content .snipcart-columns {
+        overflow: hidden;
+    }
+
+    #snipcart-main-content div.snipcart-column {
+        float: left;
+        width: 33.33333333333%;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box; /* Firefox, other Gecko */
+        box-sizing: border-box; /* Opera/IE 8+ */
+        margin-bottom: -99989px;
+        padding-bottom: 99999px !important;
+    }
+
+    #snipcart-main-content div.snipcart-column.snipcart-column-right {
+        float: right;
+        text-align: right;
+    }
+
+    #snipcart-main-content div.snipcart-column.snipcart-column-right img {
+        max-height: 50px;
+    }
+
+    #snipcart-main-content div.snipcart-column-2,
+    #snipcart-main-content div.snipcart-column-3 {
+        border-left: 1px solid @border-color;
+    }
+
+    /* Boxed Columns */
+    #snipcart-main-content .snipcart-boxed-columns div.snipcart-column-2 {
+        border-top: 0;
+    }
+
+    /* / Boxed Columns */
+    /*** / Columns ***/
+    /*** Promo Codes ***/
+    /* We want the promo code form on same line */
+    #snipcart-main-container #snipcart-apply-discount {
+        padding: 10px 20px;
+        text-align: right;
+    }
+
+    #snipcart-main-container #snipcart-apply-discount input[type=text] {
+        display: inline-block;
+        margin: 0 7px 0 0;
+    }
+
+    #snipcart-main-container #snipcart-apply-discount div {
+        float: right;
+        width: 250px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        top: 0;
+    }
+
+    #snipcart-main-container #snipcart-apply-discount button {
+        float: right;
+    }
+
+    /*** / Promo Codes ***/
+    /*** Items ***/
+    #snipcart-main-container table#snipcart-items tr {
+        display: table-row;
+    }
+
+    #snipcart-main-container table#snipcart-items tr th, #snipcart-main-container table#snipcart-items tr td {
+        display: table-cell;
+    }
+
+    #snipcart-main-container table#snipcart-items td span.snipcart-thumbnail-wrapper {
+        display: inline-block;
+    }
+
+    #snipcart-main-container table#snipcart-items td.snipcart-td-1,
+    #snipcart-main-container table#snipcart-items td.snipcart-td-2,
+    #snipcart-main-container table#snipcart-items td.snipcart-td-2.snipcart-no-customfields,
+    #snipcart-main-container #snipcart-step-content-cart-items table#snipcart-items tr:first-child td.snipcart-td-1,
+    #snipcart-main-container #snipcart-step-content-cart-content table#snipcart-items tr:first-child td.snipcart-td-1 {
+        border-top: 1px solid #eee;
+    }
+
+    #snipcart-main-container #snipcart-step-content-cart-items table#snipcart-items td.snipcart-td-2,
+    #snipcart-main-container #snipcart-step-content-cart-content table#snipcart-items td.snipcart-td-2 {
+        /* We limit the width in order to have decent looking input fields */
+        width: 160px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #snipcart-main-container table#snipcart-items td.snipcart-td-2.snipcart-no-customfields {
+        /* We want to to use smallest width when no custom fields to show */
+        width: auto !important;
+    }
+
+    #snipcart-main-container table#snipcart-items td.snipcart-td-3,
+    #snipcart-main-container table#snipcart-items td.snipcart-td-4,
+    #snipcart-main-container table#snipcart-items td.snipcart-td-5 {
+        float: none;
+        width: 120px;
+        border-right: none;
+        margin: 0;
+        border-top: 1px solid #eee;
+    }
+
+    #snipcart-main-container table#snipcart-items td.snipcart-td-3 {
+        width: 140px
+    }
+
+    #snipcart-main-container table#snipcart-items td.snipcart-td-6 {
+        position: static;
+        width: 60px;
+    }
+
+    /*** / Items ***/
+    /*** Confirm ***/
+    /* Adress infos */
+    #snipcart-main-container #snipcart-step-content-confirm .snipcart-column-2,
+    #snipcart-main-container #snipcart-step-content-confirm .snipcart-column-3 {
+        margin-top: 0;
+        /* No margin needed because the columns are on the same line */
+    }
+
+    /* / Adress infos */
+    /*** / Confirm ***/
+
+}
+
+@media (max-width: 800px) {
+    .snipcart-checkout-container {
+        margin-left: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    #snipcart-main-container {
+        padding: 0;
+        top: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    /*** Steps ***/
+    ul#snipcart-steps {
+        height: 60px;
+    }
+
+    ul#snipcart-steps li span {
+        float: left; /* Icon and text on the same line */
+    }
+
+    ul#snipcart-steps li span.snipcart-step-text {
+        text-align: left;
+        margin: 13px 0 0 3px;
+        width: 70px; /* We want the text to wrap */
+    }
+
+    ul#snipcart-steps li span.snipcart-step-number {
+        width: auto;
+        margin: 9px 0 0 5px;
+    }
+
+    /*** / Steps ***/
+}
+
+@media print {
+
+    body.snipcart-open #snipcart-modal {
+        position: static;
+    }
+
+    body.snipcart-open #snipcart-overlay {
+        display: none;
+    }
+
+    body.snipcart-open #snipcart-actions {
+        display: none;
+    }
+
+    body.snipcart-open .snipcart-checkout-container .snipcart-add-quantity,
+    body.snipcart-open .snipcart-checkout-container .snipcart-minus-quantity,
+    body.snipcart-open .snipcart-checkout-container .snipcart-remove-item,
+    body.snipcart-open .snipcart-checkout-container #snipcart-logged-user,
+    body.snipcart-open .snipcart-checkout-container #snipcart-continue-shopping-link {
+        display: none !important;
+    }
+
+    body.snipcart-open table#snipcart-items td.snipcart-td-3 span {
+        border: none;
+        background-color: inherit;
+    }
+
+    body.snipcart-open #snipcart-header #snipcart-title {
+        line-height: inherit;
+        display: none;
+        min-width: 300px;
+    }
+
+    body.snipcart-open #snipcart-main-container span.snipcart-total-price {
+        color: inherit;
+        font-weight: bold;
+    }
+
+    body.snipcart-open #snipcart-header #snipcart-total span.snipcart-label {
+        width: auto;
+    }
+
+    body.snipcart-open #snipcart-header {
+        height: auto;
+    }
+
+    body.snipcart-open #snipcart-header #snipcart-total span.snipcart-label span {
+        margin-top: 0;
+    }
+
+    body.snipcart-open #snipcart-header #snipcart-total span.snipcart-amount {
+        font-size: inherit;
+        color: inherit;
+        font-weight: bold;
+        line-height: inherit;
+    }
+
+    body.snipcart-open .snipcart-print-no-show {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    ul#snipcart-steps li span.snipcart-step-text {
+        width: 80px; /* We want the text to wrap */
+    }
+}

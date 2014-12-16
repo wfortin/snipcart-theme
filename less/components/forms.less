@@ -1,0 +1,212 @@
+#snipcart-main-container {
+    label {
+        font: 11px 'brandon_grotesquebold';
+        text-transform: uppercase;
+        display: block;
+        color: #333;
+        opacity: 0.7;
+        margin-top: 10px;
+    }
+
+    input[type=text],
+    input[type=password],
+    select {
+        box-sizing: border-box;
+        width: 100%;
+        height: 38px;
+        display: block;
+        padding: 8px 6px;
+        margin: 5px 0 0 0;
+        font-size: 14px;
+        line-height: 20px;
+        color: #555;
+        background-image: none;
+        background-color: white;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        border: 1px solid #e5e5e5;
+    }
+
+    input[type=text],
+    input[type=password] {
+        background: rgb(246, 246, 246); /* Old browsers */
+        background: radial-gradient(ellipse at center, rgba(246, 246, 246, 1) 0%, rgba(255, 255, 255, 1) 5%);
+        transition: border linear 0.2s, box-shadow linear 0.2s;
+
+        &.snipcart-has-errors {
+            border-color: red;
+            outline: 0;
+            outline: thin dotted \9; /* IE6-9 */
+            box-shadow: inset 0 1px 1px gainsboro, 0 0 8px red;
+            color: red;
+        }
+
+        &:focus {
+            border-color: #333;
+            outline: 0;
+            outline: thin dotted \9; /* IE6-9 */
+            box-shadow: inset 0 1px 1px gainsboro, 0 0 8px #333;
+        }
+    }
+
+    .snipcart-same-as-billing-address {
+        margin: 20px 0 0 20px;
+
+        a {
+            display: inline-block;
+            height: 17px;
+            line-height: 17px;
+            text-decoration: none;
+            color: inherit;
+            font-weight: bold;
+            background: url('@{snipcart-path}/img/checkbox.png') left center no-repeat;
+            padding-left: 25px;
+
+            &:hover {
+                color: #333333;
+            }
+
+            &#snipcart-cvc-trigger {
+                font: 14px 'brandon_grotesquebold', sans-serif;
+                color: #26282a;
+                position: absolute;
+                right: 10px;
+                top: 0;
+            }
+        }
+
+        &.same a {
+            background-image: url('@{snipcart-path}/img/selected.png');
+        }
+    }
+
+    .snipcart-form-field {
+        position: relative;
+        display: block;
+    }
+
+    .snipcart-checkbox-field {
+        input {
+            float: left;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        label {
+            float: left;
+        }
+    }
+
+    select#snipcart-billing-expmonth,
+    select#snipcart-billing-expyear {
+        float: left;
+        width: 49%;
+    }
+
+    select#snipcart-billing-expyear {
+        margin-left: 2%;
+    }
+}
+
+#snipcart-form.snipcart-full-width-form {
+    padding: 10px 0 20px 0;
+
+    .snipcart-centered-field {
+        text-align: center;
+        padding: 0 20px;
+
+        label {
+            font-size: inherit;
+            font-family: inherit;
+            text-transform: none;
+            margin-bottom: 15px;
+        }
+    }
+
+    p.snipcart-message {
+        text-align: center;
+        font-weight: bold;
+    }
+
+}
+
+// Errors
+#snipcart-global-errors ul {
+    display: block;
+    list-style: none;
+    margin: 0 0 15px 30px;
+
+    li {
+        display: block;
+        list-style: none;
+        margin: 0 0 5px 0;
+        padding: 0;
+        color: red;
+        text-transform: uppercase;
+    }
+}
+
+#snipcart-main-container .snipcart-errors {
+    display: block;
+    color: red;
+    font: 14px 'brandon_grotesqueregular';
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &.snipcart-centered-errors {
+        text-align: center;
+    }
+}
+
+#snipcart-main-container span.snipcart-form-error {
+    box-sizing: border-box;
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(239, 37, 58, 1) 0%, rgba(232, 20, 35, 1) 100%);
+    border: solid 1px #bc101c;
+    padding: 5px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+// Custom fields
+#snipcart-main-container {
+    .snipcart-customfield-checkbox {
+        margin-top: 10px;
+
+        input {
+            margin: 0;
+            padding: 0;
+        }
+
+        label {
+            margin: 3px 0 0 5px;
+        }
+
+        .snipcart-customfield-element,
+        label,
+        .snipcart-customfield-element span {
+            display: inline-block;
+        }
+
+        .snipcart-customfield-element {
+            margin-bottom: 10px;
+        }
+    }
+
+    .snipcart-confirm-custom-field {
+        margin-top: 10px;
+
+        span.snipcart-confirm-custom-field-name {
+            display: block;
+            font-weight: bold;
+        }
+    }
+
+}

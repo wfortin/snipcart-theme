@@ -1,0 +1,427 @@
+// Main body
+body.snipcart-open {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    height: auto !important;
+}
+
+#snipcart-main-container {
+    position: relative;
+    outline: 0 none;
+    top: auto;
+    width: auto;
+    max-width: 996px;
+    margin: 0 auto;
+    z-index: 15000;
+    font-family: Arial !important;
+    color: @secondary-text-accent !important;
+    font-size: 10pt;
+    padding-bottom: 25px;
+
+    span.snipcart-clear,
+    span.snipcart-clear {
+        display: block;
+        clear: both;
+    }
+
+    .snipcart-has-fl-elems:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    a {
+        color: #87db57;
+    }
+
+    .snipcart-full-width-text {
+        padding: 20px 30px;
+
+        span.snipcart-title {
+            padding-bottom: 10px;
+            display: block;
+            margin-top: 20px;
+            text-transform: uppercase;
+            color: #333333;
+            font-size: 12pt;
+            font-weight: bold;
+            text-align: center;
+            font-family: 'brandon_grotesquebold';
+
+            span {
+                color: #333;
+            }
+        }
+
+        span.snipcart-subtitle {
+            font-size: 14px;
+            font-family: 'brandon_grotesquebold';
+            text-transform: uppercase;
+            text-align: center;
+            display: block;
+            font-weight: bold;
+        }
+    }
+
+    .snipcart-comments-box {
+        padding: 0px 50px;
+
+        label {
+            font-size: 13px;
+            margin-bottom: 5px;
+            text-transform: none;
+            font-family: Arial
+        }
+    }
+
+    .snipcart-comments-box textarea {
+        width: 100%;
+        padding: 0px;
+    }
+
+    #snipcart-generic-errors ul {
+        padding-left: 40px;
+
+        li {
+            text-align: left;
+            list-style-type: disc;
+            padding: 5px 0;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+    }
+
+    .snipcart-centered-text {
+        text-align: center;
+    }
+
+    .snipcart-top-spacing {
+        padding-top: 10px;
+    }
+}
+
+#snipcart-sub-content .snipcart-step-container {
+    overflow-y: auto;
+    max-height: none !important;
+}
+
+#snipcart-main-content {
+    background-color: #ffffff;
+    width: 100%;
+
+    h4 {
+        font: 14px 'brandon_grotesquebold', sans-serif;
+        color: #1c1e21;
+        text-transform: uppercase;
+        margin: 0;
+    }
+}
+
+/* Bottom bar containing action buttons */
+#snipcart-main-container {
+    div#snipcart-actions,
+    div.snipcart-additional-option {
+        height: 75px;
+        padding: 0 20px;
+        border-top: 1px solid #eeeeee;
+        background: rgb(250, 250, 250); /* Old browsers */
+        background: linear-gradient(to bottom, rgba(250, 250, 250, 1) 1%, rgba(255, 255, 255, 1) 5%, rgba(240, 240, 240, 1) 100%);
+    }
+
+    #snipcart-actions {
+        a.snipcart-next,
+        a.snipcart-finalize {
+            margin-top: 20px;
+            float: right;
+        }
+
+        a.snipcart-previous {
+            margin-top: 20px;
+            float: left;
+        }
+
+        a.snipcart-previous.snipcart-spacing {
+            margin-left: 10px;
+        }
+
+        .snipcart-btn {
+            margin-top: 20px;
+            float: left;
+        }
+    }
+
+    .snipcart-next-step {
+        display: block;
+        position: absolute;
+        bottom: 15px;
+        right: 35px;
+        font-weight: bold;
+    }
+
+    .snipcart-previous-step {
+        display: block;
+        position: absolute;
+        bottom: 15px;
+        left: 20px;
+        font-weight: bold;
+    }
+
+    .snipcart-additional-option {
+        .snipcart-btn {
+            float: right;
+            margin-top: 20px;
+        }
+
+        h4 {
+            padding-top: 15px;
+        }
+
+        &#snipcart-cvc-content {
+            height: auto;
+            padding-bottom: 10px;
+
+            p {
+                padding-top: 10px;
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+/* Highlight for unit price and total price */
+#snipcart-main-container {
+    span.snipcart-unit-price,
+    span.snipcart-total-price {
+        font: 14px 'brandon_grotesquebold', sans-serif;
+        font-weight: bold;
+        color: @secondary-text-accent;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    span.snipcart-total-price {
+        color: #333;
+
+        &.snipcart-saved-amount {
+            color: #76d443;
+        }
+    }
+}
+
+/*** Paypal Express ***/
+#snipcart-main-container {
+    #snipcart-paypal-express-loading {
+        text-align: center;
+        margin-top: 30px;
+        padding-bottom: 30px;
+
+        &.snipcart-loading {
+            padding-top: 100px;
+            background-color: #fff;
+            background-image: url('@{snipcart-path}/img/ajax-loader.gif');
+            background-position: top center;
+            background-repeat: no-repeat;
+        }
+
+        &.snipcart-error {
+            color: red;
+            font-weight: bold;
+        }
+    }
+}
+
+/*** Promo Codes ***/
+#snipcart-promocodes {
+    background: linear-gradient(to bottom, rgba(247, 247, 247, 1) 0%, rgba(251, 251, 251, 1) 5%);
+
+    .snipcart-promocode-form {
+        border-bottom: 1px solid #eaebec;
+        padding: 10px 20px;
+        text-align: center;
+
+        input[type=text] {
+            margin-bottom: 10px;
+        }
+    }
+
+    .snipcart-promocodes-list {
+        ul {
+            margin: 0;
+
+            li {
+                list-style-type: none;
+                border-bottom: 1px solid #eaebec;
+                padding: 10px 30px 10px;
+                text-transform: uppercase;
+                font: 14px 'brandon_grotesquebold', sans-serif;
+            }
+        }
+
+        strong {
+            color: #76d443;
+        }
+    }
+
+    div.snipcart-error-message {
+        margin: 0;
+        padding: 10px 30px;
+        color: red;
+        font: 14px 'brandon_grotesquebold', sans-serif;
+        border-bottom: 1px solid #eaebec;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+/*** / Promo Codes ***/
+
+/*** Shipping Methods ***/
+
+#snipcart-main-container table#snipcart-shipping-methods {
+    tr {
+        td.snipcart-td-1 {
+            background: url('@{snipcart-path}/img/checkbox.png') no-repeat 20px center;
+            padding-left: 50px;
+        }
+
+        &.selected td.snipcart-td-1 {
+            background-image: url('@{snipcart-path}/img/selected.png');
+        }
+    }
+
+    td {
+        cursor: pointer;
+    }
+}
+
+/*** / Shipping Methods ***/
+
+/*** Confirm ***/
+
+/* Adress infos */
+
+#snipcart-main-container #snipcart-step-content-confirm .snipcart-column span {
+    display: block;
+    padding-bottom: 3px;
+}
+
+#snipcart-main-container #snipcart-step-content-confirm .snipcart-column-2,
+#snipcart-main-container #snipcart-step-content-confirm .snipcart-column-3 {
+    margin-top: 20px;
+}
+
+/* / Adress infos */
+
+/* Prices */
+
+#snipcart-bottom-confirm {
+    background: linear-gradient(to bottom, rgba(246, 246, 246, 1) 0%, rgba(251, 251, 251, 1) 5%);
+    border-bottom: 1px solid #e9e9eb;
+}
+
+#snipcart-order-totals {
+    padding-top: 12px;
+}
+
+table#snipcart-confirm-prices {
+    width: 100%;
+
+    tr {
+        td {
+            padding: 0 20px 10px 20px;
+            vertical-align: top;
+
+            span {
+                font: 14px 'brandon_grotesquebold', sans-serif;
+                color: #1c1e21;
+                text-transform: uppercase;
+
+                small {
+                    color: #a1a2a2;
+                }
+            }
+
+            &.snipcart-price-td-2 {
+                text-align: right;
+                white-space: nowrap;
+
+                &.snipcart-negative-price span {
+                    color: #76d443;
+                }
+            }
+        }
+
+        &.snipcart-total-price-tr td span {
+            color: #333;
+        }
+
+        &.snipcart-grand-total-price-tr td {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-top: 1px solid #eaebec;
+
+            span {
+                font: 16px 'brandon_grotesquebold', sans-serif;
+            }
+        }
+
+        &:first-child td {
+            padding-top: 10px;
+        }
+    }
+}
+
+/* / Prices */
+
+/*** / Confirm ***/
+
+/*** Cart items ***/
+
+#snipcart-sharebyemail-container {
+    float: left;
+    margin-top: 20px;
+
+    a.snipcart-btn {
+        float: none;
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+
+    input {
+        float: left;
+    }
+}
+/*** / Cart items ***/
+
+/*** Empty cart ***/
+
+#snipcart-step-content-emptycart .snipcart-full-width-text p,
+#snipcart-blocked .snipcart-full-width-text p {
+    font-size: 18px;
+    font-family: 'brandon_grotesquebold', sans-serif;
+    text-transform: uppercase;
+}
+
+/*** / Empty cart ***/
+
+// Snipcart checkout holder
+.snipcart-checkout-container {
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 1) 100%);
+    right: 0;
+    top: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow-x: auto;
+    z-index: 1040;
+    padding: 25px 0;
+    height: auto;
+    margin-left: 0;
+    width: auto;
+}

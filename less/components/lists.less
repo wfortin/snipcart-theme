@@ -1,0 +1,236 @@
+// Lists
+#snipcart-main-container table.snipcart-list {
+    width: 100%;
+    clear: both;
+
+    th {
+        text-align: center;
+        color: #333;
+        opacity: 0.7;
+        font: 11px 'brandon_grotesquebold', sans-serif;
+        text-transform: uppercase;
+        height: 40px;
+
+        &.odd td {
+            background-color: #fbfbfb;
+        }
+    }
+
+    td {
+        padding: 20px 0;
+        text-align: center;
+        border-top: 1px solid  @border-color;
+
+        span {
+            display: block;
+        }
+    }
+
+    .snipcart-th-left,
+    .snipcart-td-left {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .snipcart-th-right,
+    .snipcart-td-right {
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .snipcart-td-right.snipcart-pad-right {
+        padding-right: 60px;
+    }
+
+    span.snipcart-product-name,
+    span.snipcart-shipping-method-name,
+    span.snipcart-shipping-method-price,
+    span.snipcart-confirm-item-quantity,
+    span.snipcart-confirm-item-price,
+    span.snipcart-confirm-item-total-price,
+    span.snipcart-title {
+        color: #333333;
+        font: 14px 'brandon_grotesquebold', sans-serif;
+        text-transform: uppercase;
+    }
+
+    span.snipcart-product-id,
+    span.snipcart-shipping-method-time {
+        font-weight: bold;
+        color: #979797;
+        font-size: 10pt;
+    }
+
+    span.snipcart-confirm-item-quantity {
+        color: #999999;
+    }
+}
+
+// Items
+#snipcart-main-container table#snipcart-items {
+    tr {
+        position: relative;
+        display: block;
+        clear: both;
+    }
+
+    th {
+        display: none; /* No heading on mobile */
+    }
+
+    td {
+        display: block; /* We want cells to use the full width */
+
+        &.snipcart-td-1 {
+            padding-right: 20px;
+        }
+
+        &.snipcart-td-2 {
+            text-align: left;
+            padding: 10px 20px 20px 20px;
+            border-top: 0;
+
+            &.snipcart-no-customfields {
+                border: 0;
+                padding: 0;
+                /* We don't want to see the empty cell on mobile version */
+            }
+        }
+
+        &.snipcart-td-3,
+        &.snipcart-td-4,
+        &.snipcart-td-5 {
+            box-sizing: border-box;
+            width: 33.33333333333%;
+            float: left;
+            border-right: 1px solid @border-color;
+            margin: 10px 0;
+            border-top: none;
+            background: #fff !important;
+        }
+
+        &.snipcart-td-5 {
+            border-right: none;
+        }
+
+        &.snipcart-td-6 {
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: 0;
+            right: 15px;
+
+            a.snipcart-remove-item {
+                display: block;
+                width: 9px;
+                height: 9px;
+                text-indent: -9999px;
+                background: url('@{snipcart-path}/img/remove-item.png') no-repeat 0 0;
+                float: left;
+            }
+
+            a.snipcart-duplicate-item {
+                margin-top: 15px;
+                position: relative;
+                right: 4px;
+            }
+        }
+    }
+
+    tbody {
+        &.snipcart-subtotal,
+        &.snipcart-total,
+        &.snipcart-fees {
+            background-color: #fbfbfb;
+        }
+
+        &.snipcart-discounts tr td {
+            padding: 10px 0 10px 20px;
+        }
+
+        &.snipcart-fees tr td {
+            padding: 5px 0 5px 20px;
+            border: none;
+        }
+
+        &.snipcart-subtotal tr td {
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        &.snipcart-subtotal tr td span,
+        &.snipcart-total tr td span {
+            font-size: 18px;
+        }
+    }
+
+    .snipcart-item-quantity-triggers {
+        display: inline-block;
+
+        a, span {
+            display: block;
+            float: left;
+            height: 17px;
+            line-height: 17px;
+        }
+
+        a {
+            padding: 0 5px;
+            font-family: Arial;
+            font-size: 13pt;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            border-radius: 30px;
+            background-color: #e8e8e8;
+            color: #1c1e21;
+            text-align: center;
+            text-decoration: none;
+            height: 17px;
+            line-height: 19px;
+
+            &.snipcart-minus-quantity {
+                line-height: 14px;
+                /* The minus sign looks better when higher in the circle */
+            }
+        }
+
+        span {
+            color: #333333;
+            font-weight: bold;
+            font: 14px 'brandon_grotesquebold', sans-serif;
+            margin: 0 8px;
+            background-color: #ffffff;
+        }
+    }
+
+    span.snipcart-product-description {
+        font-size: 9pt;
+    }
+
+    span.snipcart-thumbnail-wrapper {
+        width: 65px;
+        height: 65px;
+        float: left;
+        display: none;
+        margin-right: 10px;
+    }
+
+    span.snipcart-thumbnail img,
+    span.snipcart-thumbnail-wrapper img {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+    }
+}
+
+#snipcart-main-container #snipcart-step-content-cart-content table#snipcart-items tr:first-child td.snipcart-td-1,
+#snipcart-main-container #snipcart-step-content-cart-items table#snipcart-items tr:first-child td.snipcart-td-1 {
+    /* We don't want the top border for this specific step since it's close to the top */
+    border-top: 0;
+}
+
+// Items at confirm step
+#snipcart-main-container #snipcart-step-content-confirm table#snipcart-items th {
+    background-color: #fbfbfb;
+    border-top: 1px solid #eeeeee;
+}
