@@ -1,0 +1,2 @@
+snipcart-theme
+==============
