@@ -5,14 +5,14 @@
 
     th {
         text-align: center;
-        color: #333;
+        color: @base-text;
         opacity: 0.7;
-        font: 11px 'brandon_grotesquebold', sans-serif;
+        font: 11px @font-bold;
         text-transform: uppercase;
         height: 40px;
 
         &.odd td {
-            background-color: #fbfbfb;
+            background-color: @odd-row-background;
         }
     }
 
@@ -49,20 +49,20 @@
     span.snipcart-confirm-item-price,
     span.snipcart-confirm-item-total-price,
     span.snipcart-title {
-        color: #333333;
-        font: 14px 'brandon_grotesquebold', sans-serif;
+        color: @base-text;
+        font: 14px @font-bold;
         text-transform: uppercase;
     }
 
     span.snipcart-product-id,
     span.snipcart-shipping-method-time {
         font-weight: bold;
-        color: #979797;
+        color: @secondary;
         font-size: 10pt;
     }
 
     span.snipcart-confirm-item-quantity {
-        color: #999999;
+        color: @secondary;
     }
 }
 
@@ -106,7 +106,7 @@
             border-right: 1px solid @border-color;
             margin: 10px 0;
             border-top: none;
-            background: #fff !important;
+            background: @body-background !important;
         }
 
         &.snipcart-td-5 {
@@ -141,7 +141,7 @@
         &.snipcart-subtotal,
         &.snipcart-total,
         &.snipcart-fees {
-            background-color: #fbfbfb;
+            background-color: @odd-row-background;
         }
 
         &.snipcart-discounts tr td {
@@ -154,8 +154,8 @@
         }
 
         &.snipcart-subtotal tr td {
-            border-top: 1px solid #eee;
-            border-bottom: 1px solid #eee;
+            border-top: 1px solid @table-border;
+            border-bottom: 1px solid @table-border;
         }
 
         &.snipcart-subtotal tr td span,
@@ -178,11 +178,9 @@
             padding: 0 5px;
             font-family: Arial;
             font-size: 13pt;
-            -webkit-border-radius: 30px;
-            -moz-border-radius: 30px;
             border-radius: 30px;
-            background-color: #e8e8e8;
-            color: #1c1e21;
+            background-color: @quantity-background;
+            color: @dark-text-accent;
             text-align: center;
             text-decoration: none;
             height: 17px;
@@ -195,11 +193,11 @@
         }
 
         span {
-            color: #333333;
+            color: @base-text;
             font-weight: bold;
-            font: 14px 'brandon_grotesquebold', sans-serif;
+            font: 14px @font-bold;
             margin: 0 8px;
-            background-color: #ffffff;
+            background-color: @body-background;
         }
     }
 
@@ -231,6 +229,6 @@
 
 // Items at confirm step
 #snipcart-main-container #snipcart-step-content-confirm table#snipcart-items th {
-    background-color: #fbfbfb;
-    border-top: 1px solid #eeeeee;
+    background-color: @odd-row-background;
+    border-top: 1px solid @table-border;
 }

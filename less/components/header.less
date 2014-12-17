@@ -15,7 +15,7 @@
         float: left;
         min-width: 300px;
         height: 95px;
-        color: #fff;
+        color: @light-text-color;
         text-transform: uppercase;
         font-weight: bold;
         font: 24px brandon_grotesquelight, sans-serif;
@@ -32,13 +32,13 @@
         position: relative;
         margin-top: 0px;
         border-radius: 5px;
-        border: 1px solid #2e3031;
+        border: 1px solid @header-total-border;
     }
 
     #snipcart-total {
         display: block;
-        border: 1px solid #17181a;
-        border-radius: 6px;
+        border: 1px solid @total-border;
+        border-radius: (@border-radius * 2);
         height: 95%;
 
         span {
@@ -46,11 +46,11 @@
             float: left;
             font-weight: bold;
             text-transform: uppercase;
-            font: 16px/38px 'brandon_grotesquemedium', sans-serif;
+            font: 16px/38px @font-medium;
         }
 
         span.snipcart-label {
-            color: #898989;
+            color: @secondary;
 
             span {
                 margin-left: 10px;
@@ -59,11 +59,11 @@
         }
 
         span.snipcart-amount {
-            color: #fff;
+            color: @light-text-color;
             margin: 0 10px;
 
             &.snipcart-with-promocode {
-                color: #76d443;
+                color: @success;
             }
         }
     }
@@ -74,12 +74,12 @@
         margin-top: 8px;
 
         a {
-            color: #9f9f9f;
+            color: @secondary;
             text-decoration: underline;
             font-size: 9pt;
 
             &:hover {
-                color: #9f9f9f;
+                color: @secondary;
                 text-decoration: none;
             }
         }
@@ -103,23 +103,23 @@
 }
 
 #snipcart-main-content #snipcart-current-user {
-    color: #fff;
+    color: @light-text-color;
 
     #snipcart-user-infos {
-        background-color: #333;
+        background-color: @base-text;
         padding: 10px 20px;
     }
 
     .snipcart-welcome {
-        color: @secondary-text-accent !important;
+        color: @light-text-accent !important;
     }
 }
 
 #snipcart-main-content #snipcart-global-notices.snipcart-error {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding: 10px 5%;
-    background-color: red;
-    color: white;
+    background-color: @error;
+    color: @error-text;
 }
 
 /*** Steps ***/
@@ -130,16 +130,16 @@ ul#snipcart-steps {
     height: 60px;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, rgba(191, 191, 191, 1) 1%, rgba(224, 224, 224, 1) 100%);
+    background: @step-inactive;
     position: relative;
 
     li {
         display: block;
         height: inherit;
         float: left;
-        border-right: 1px solid #c3c3c3;
-        border-bottom: 1px solid #c3c3c3;
-        background: linear-gradient(to bottom, rgba(191, 191, 191, 1) 1%, rgba(224, 224, 224, 1) 100%);
+        border-right: 1px solid @steps-border;
+        border-bottom: 1px solid @steps-border;
+        background: @step-inactive;
         box-sizing: border-box;
         cursor: pointer;
 
@@ -154,9 +154,9 @@ ul#snipcart-steps {
                 line-height: 29px;
                 text-align: center;
                 margin: 18px 0 0 0;
-                color: #999;
+                color: @secondary;
                 font-weight: bold;
-                font: 22pt 'Snipcart';
+                font: 22pt @icon-font;
                 background-image: none;
             }
 
@@ -170,15 +170,15 @@ ul#snipcart-steps {
         }
 
         &.active {
-            background: linear-gradient(to bottom, rgba(227, 227, 227, 1) 0%, rgba(255, 255, 255, 1) 99%);
+            background: @steps-active;
             border-bottom: none;
 
             span.snipcart-step-number {
-                color: #333;
+                color: @base-text;
             }
 
             span.snipcart-step-text {
-                color: #333333;
+                color: @base-text;
             }
         }
     }

@@ -1,26 +1,59 @@
 @charset 'utf-8';
 
+// Base path to fonts
 @snipcart-path: 'https://app.snipcart.com/themes/base';
 
-@primary: green;
+@primary: #65CB36;
 @secondary: #666;
+@body-background: #fff;
 
-@header-background: @primary;
-@footer-background: @primary;
+// Header
+@header-background: linear-gradient(to bottom, rgba(48, 50, 52, 1) 0%, rgba(30, 31, 33, 1) 100%);
+@header-total-border: #2e3031;
 
-@success:#77D544;
+// Steps
+@steps-active: linear-gradient(to bottom, rgba(227,227,227,1) 0%,rgba(255,255,255,1) 99%);
+@step-inactive: linear-gradient(to bottom, rgba(191,191,191,1) 1%,rgba(224,224,224,1) 100%);
+@steps-border: #c3c3c3;
+
+// Footer
+@footer-background: linear-gradient(to bottom, rgba(48, 50, 52, 1) 0%, rgba(30, 31, 33, 1) 100%);
+@footer-border: #434648;
+@footer-text: #767676;
+
+// States
+@success: #77D544;
 @warning: #FFEC16;
 @error: #FF0600;
+@error-text: #fff;
 
+// Text
+@base-text: #333;
 @light-text-color: #ffffff;
 @dark-text-color: #1d1f22;
 @primary-text-accent: @success;
-@secondary-text-accent: #a5a5a5;
+@light-text-accent: #a5a5a5;
+@dark-text-accent: #1c1e21;
 
+// Borders
+@input-border: #e5e5e5;
 @border-color: #f1f1f2;
-@border-radius: 0;
+@total-border: #17181a;
+@border-radius: 3px;
 
-@headings-font-bold: 'brandon_grotesquebold', sans-serif;
+// Tables
+@odd-row-background: #fbfbfb;
+@table-border: #eeeeee;
+
+// Special
+@cvc-text: #26282a;
+@quantity-background: #e8e8e8;
+
+// Fonts
+@font-bold: 'brandon_grotesquebold', Arial, sans-serif;
+@font-medium: 'brandon_grotesquemedium', Arial, sans-serif;
+@font-regular: 'brandon_grotesqueregular', Arial, sans-serif;
+@icon-font: 'Snipcart';
 
 // Icon fonts
 @import 'components/icons';

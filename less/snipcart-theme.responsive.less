@@ -96,12 +96,12 @@
         color: #8e8e8e;
         font-weight: bold;
         line-height: 16px;
-        font: 10px/16px 'brandon_grotesquebold', Arial, sans-serif;
+        font: 10px/16px @font-bold;
     }
 
     ul#snipcart-steps li span.snipcart-step-number {
         margin: 9px 0 0 0;
-        font: 28pt 'Snipcart';
+        font: 28pt @icon-font;
     }
 
     /*** / Steps ***/
@@ -114,9 +114,7 @@
     #snipcart-main-content div.snipcart-column {
         float: left;
         width: 33.33333333333%;
-        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-        -moz-box-sizing: border-box; /* Firefox, other Gecko */
-        box-sizing: border-box; /* Opera/IE 8+ */
+        box-sizing: border-box;
         margin-bottom: -99989px;
         padding-bottom: 99999px !important;
     }

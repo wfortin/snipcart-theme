@@ -1,9 +1,9 @@
 #snipcart-main-container {
     label {
-        font: 11px 'brandon_grotesquebold';
+        font: 11px @font-bold;
         text-transform: uppercase;
         display: block;
-        color: #333;
+        color: @base-text;
         opacity: 0.7;
         margin-top: 10px;
     }
@@ -19,34 +19,32 @@
         margin: 5px 0 0 0;
         font-size: 14px;
         line-height: 20px;
-        color: #555;
+        color: @base-text;
         background-image: none;
         background-color: white;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        border: 1px solid #e5e5e5;
+        border-radius: @border-radius;
+        border: 1px solid @input-border;
     }
 
     input[type=text],
     input[type=password] {
-        background: rgb(246, 246, 246); /* Old browsers */
+        background: rgb(246, 246, 246);
         background: radial-gradient(ellipse at center, rgba(246, 246, 246, 1) 0%, rgba(255, 255, 255, 1) 5%);
         transition: border linear 0.2s, box-shadow linear 0.2s;
 
         &.snipcart-has-errors {
-            border-color: red;
+            border-color: @error;
             outline: 0;
             outline: thin dotted \9; /* IE6-9 */
-            box-shadow: inset 0 1px 1px gainsboro, 0 0 8px red;
-            color: red;
+            box-shadow: inset 0 1px 1px gainsboro, 0 0 8px @error;
+            color: @error;
         }
 
         &:focus {
-            border-color: #333;
+            border-color: @base-text;
             outline: 0;
             outline: thin dotted \9; /* IE6-9 */
-            box-shadow: inset 0 1px 1px gainsboro, 0 0 8px #333;
+            box-shadow: inset 0 1px 1px gainsboro, 0 0 8px @base-text;
         }
     }
 
@@ -64,12 +62,12 @@
             padding-left: 25px;
 
             &:hover {
-                color: #333333;
+                color: @base-text;
             }
 
             &#snipcart-cvc-trigger {
-                font: 14px 'brandon_grotesquebold', sans-serif;
-                color: #26282a;
+                font: 14px @font-bold;
+                color: @cvc-text;
                 position: absolute;
                 right: 10px;
                 top: 0;
@@ -150,7 +148,7 @@
 #snipcart-main-container .snipcart-errors {
     display: block;
     color: red;
-    font: 14px 'brandon_grotesqueregular';
+    font: 14px @font-regular;
 
     ul {
         list-style-type: none;
@@ -166,13 +164,13 @@
 #snipcart-main-container span.snipcart-form-error {
     box-sizing: border-box;
     display: block;
-    color: #fff;
+    color: @light-text-color;
     text-align: center;
     background: linear-gradient(to bottom, rgba(239, 37, 58, 1) 0%, rgba(232, 20, 35, 1) 100%);
-    border: solid 1px #bc101c;
+    border: solid 1px darken(@error, 8%);
     padding: 5px;
     width: 100%;
-    border-radius: 3px;
+    border-radius: @border-radius;
 }
 
 // Custom fields

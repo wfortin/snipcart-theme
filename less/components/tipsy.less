@@ -8,8 +8,8 @@
 }
 
 .snipcart-tipsy-inner {
-    background-color: #C00;
-    color: #FFF;
+    background-color: @error;
+    color: @body-background;
     max-width: 200px;
     padding: 5px 8px 4px 8px;
     text-align: center;
@@ -17,7 +17,7 @@
 
 /* Rounded corners */
 .snipcart-tipsy-inner {
-    border-radius: 3px;
+    border-radius: @border-radius;
 }
 
 /* Uncomment for shadow */
@@ -33,23 +33,23 @@
 
 /* Rules to colour arrows */
 .snipcart-tipsy-arrow-n {
-    border-bottom-color: #C00;
+    border-bottom-color: @error;
 }
 
 .snipcart-tipsy-arrow-s {
-    border-top-color: #C00;
+    border-top-color: @error;
 }
 
 .snipcart-tipsy-arrow-e {
-    border-left-color: #C00;
+    border-left-color: @error;
 }
 
 .snipcart-tipsy-arrow-w {
-    border-right-color: #C00;
+    border-right-color: @error;
 }
 
 .snipcart-tipsy-n .snipcart-tipsy-arrow {
-    top: 0px;
+    top: 0;
     left: 50%;
     margin-left: -5px;
     border-bottom-style: solid;
